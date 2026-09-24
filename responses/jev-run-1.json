@@ -1,0 +1,489 @@
+{
+  "model": "jev-1.13.0",
+  "answers": {
+    "t5fr4": {
+      "type": "choice",
+      "choice": "clarify",
+      "confidence": 0.99,
+      "probabilities": {
+        "continue": 0.0,
+        "clarify": 0.99,
+        "replan": 0.01
+      }
+    },
+    "ttvqt": {
+      "type": "choice",
+      "choice": "replan",
+      "confidence": 0.97,
+      "probabilities": {
+        "continue": 0.01,
+        "clarify": 0.01,
+        "replan": 0.98
+      }
+    },
+    "th6d2": {
+      "type": "choice",
+      "choice": "continue",
+      "confidence": 0.68,
+      "probabilities": {
+        "continue": 0.79,
+        "clarify": 0.04,
+        "replan": 0.17
+      }
+    },
+    "tash4": {
+      "type": "choice",
+      "choice": "replan",
+      "confidence": 0.35,
+      "probabilities": {
+        "continue": 0.4,
+        "replan": 0.57,
+        "clarify": 0.03
+      }
+    },
+    "tv9kq": {
+      "type": "choice",
+      "choice": "replan",
+      "confidence": 0.98,
+      "probabilities": {
+        "continue": 0.01,
+        "replan": 0.98,
+        "clarify": 0.01
+      }
+    },
+    "tdere": {
+      "type": "choice",
+      "choice": "clarify",
+      "confidence": 0.97,
+      "probabilities": {
+        "continue": 0.0,
+        "replan": 0.02,
+        "clarify": 0.98
+      }
+    },
+    "taakq": {
+      "type": "choice",
+      "choice": "replan",
+      "confidence": 0.99,
+      "probabilities": {
+        "continue": 0.0,
+        "replan": 1.0,
+        "clarify": 0.0
+      }
+    },
+    "tgpux": {
+      "type": "choice",
+      "choice": "replan",
+      "confidence": 0.99,
+      "probabilities": {
+        "continue": 0.0,
+        "replan": 1.0,
+        "clarify": 0.0
+      }
+    },
+    "tw9n8": {
+      "type": "choice",
+      "choice": "replan",
+      "confidence": 0.6,
+      "probabilities": {
+        "continue": 0.26,
+        "replan": 0.73,
+        "clarify": 0.01
+      }
+    },
+    "tvsg5": {
+      "type": "choice",
+      "choice": "clarify",
+      "confidence": 0.74,
+      "probabilities": {
+        "continue": 0.15,
+        "replan": 0.02,
+        "clarify": 0.83
+      }
+    },
+    "ts4hn": {
+      "type": "choice",
+      "choice": "replan",
+      "confidence": 0.73,
+      "probabilities": {
+        "continue": 0.17,
+        "replan": 0.82,
+        "clarify": 0.01
+      }
+    },
+    "tb9x2": {
+      "type": "choice",
+      "choice": "replan",
+      "confidence": 0.41,
+      "probabilities": {
+        "continue": 0.39,
+        "clarify": 0.01,
+        "replan": 0.6
+      }
+    },
+    "tt7kp": {
+      "type": "choice",
+      "choice": "clarify",
+      "confidence": 0.97,
+      "probabilities": {
+        "continue": 0.02,
+        "clarify": 0.98,
+        "replan": 0.0
+      }
+    },
+    "tvad4": {
+      "type": "choice",
+      "choice": "clarify",
+      "confidence": 0.77,
+      "probabilities": {
+        "continue": 0.13,
+        "clarify": 0.85,
+        "replan": 0.02
+      }
+    },
+    "twzhs": {
+      "type": "choice",
+      "choice": "replan",
+      "confidence": 0.95,
+      "probabilities": {
+        "continue": 0.0,
+        "replan": 0.97,
+        "clarify": 0.03
+      }
+    },
+    "tm3z2": {
+      "type": "choice",
+      "choice": "clarify",
+      "confidence": 0.53,
+      "probabilities": {
+        "continue": 0.22,
+        "replan": 0.09,
+        "clarify": 0.69
+      }
+    },
+    "tzpnt": {
+      "type": "choice",
+      "choice": "replan",
+      "confidence": 0.99,
+      "probabilities": {
+        "continue": 0.0,
+        "replan": 1.0,
+        "clarify": 0.0
+      }
+    },
+    "taeka": {
+      "type": "choice",
+      "choice": "clarify",
+      "confidence": 0.95,
+      "probabilities": {
+        "continue": 0.02,
+        "replan": 0.01,
+        "clarify": 0.97
+      }
+    },
+    "tdykw": {
+      "type": "choice",
+      "choice": "clarify",
+      "confidence": 0.35,
+      "probabilities": {
+        "continue": 0.27,
+        "replan": 0.17,
+        "clarify": 0.5599999999999999
+      }
+    },
+    "tg8xz": {
+      "type": "choice",
+      "choice": "continue",
+      "confidence": 0.92,
+      "probabilities": {
+        "continue": 0.95,
+        "replan": 0.04,
+        "clarify": 0.01
+      }
+    },
+    "tdt2e": {
+      "type": "choice",
+      "choice": "clarify",
+      "confidence": 0.76,
+      "probabilities": {
+        "continue": 0.14,
+        "clarify": 0.84,
+        "replan": 0.02
+      }
+    },
+    "tbwux": {
+      "type": "choice",
+      "choice": "replan",
+      "confidence": 0.91,
+      "probabilities": {
+        "continue": 0.0,
+        "clarify": 0.06,
+        "replan": 0.94
+      }
+    },
+    "takyn": {
+      "type": "choice",
+      "choice": "replan",
+      "confidence": 0.96,
+      "probabilities": {
+        "continue": 0.03,
+        "replan": 0.97,
+        "clarify": 0.0
+      }
+    },
+    "t4cyb": {
+      "type": "choice",
+      "choice": "continue",
+      "confidence": 0.71,
+      "probabilities": {
+        "continue": 0.81,
+        "replan": 0.02,
+        "clarify": 0.17
+      }
+    },
+    "ttcgv": {
+      "type": "choice",
+      "choice": "clarify",
+      "confidence": 0.98,
+      "probabilities": {
+        "continue": 0.01,
+        "replan": 0.0,
+        "clarify": 0.99
+      }
+    },
+    "tyjug": {
+      "type": "choice",
+      "choice": "replan",
+      "confidence": 0.97,
+      "probabilities": {
+        "continue": 0.02,
+        "replan": 0.97,
+        "clarify": 0.01
+      }
+    },
+    "tdc39": {
+      "type": "choice",
+      "choice": "clarify",
+      "confidence": 0.94,
+      "probabilities": {
+        "continue": 0.0,
+        "clarify": 0.96,
+        "replan": 0.04
+      }
+    },
+    "t87tv": {
+      "type": "choice",
+      "choice": "continue",
+      "confidence": 0.89,
+      "probabilities": {
+        "continue": 0.93,
+        "replan": 0.06,
+        "clarify": 0.01
+      }
+    },
+    "tbtk9": {
+      "type": "choice",
+      "choice": "clarify",
+      "confidence": 0.91,
+      "probabilities": {
+        "continue": 0.02,
+        "replan": 0.04,
+        "clarify": 0.94
+      }
+    },
+    "tan3s": {
+      "type": "choice",
+      "choice": "replan",
+      "confidence": 1.0,
+      "probabilities": {
+        "continue": 0.0,
+        "replan": 1.0,
+        "clarify": 0.0
+      }
+    },
+    "tpdr2": {
+      "type": "choice",
+      "choice": "replan",
+      "confidence": 0.99,
+      "probabilities": {
+        "continue": 0.0,
+        "clarify": 0.0,
+        "replan": 1.0
+      }
+    },
+    "tqq77": {
+      "type": "choice",
+      "choice": "continue",
+      "confidence": 0.18,
+      "probabilities": {
+        "continue": 0.46,
+        "replan": 0.19,
+        "clarify": 0.35
+      }
+    },
+    "tpnxs": {
+      "type": "choice",
+      "choice": "replan",
+      "confidence": 0.99,
+      "probabilities": {
+        "continue": 0.01,
+        "replan": 0.99,
+        "clarify": 0.0
+      }
+    },
+    "tf2rb": {
+      "type": "choice",
+      "choice": "clarify",
+      "confidence": 0.82,
+      "probabilities": {
+        "continue": 0.08,
+        "clarify": 0.88,
+        "replan": 0.04
+      }
+    },
+    "tpmh8": {
+      "type": "choice",
+      "choice": "continue",
+      "confidence": 0.62,
+      "probabilities": {
+        "continue": 0.75,
+        "replan": 0.23,
+        "clarify": 0.02
+      }
+    },
+    "tjm8d": {
+      "type": "choice",
+      "choice": "replan",
+      "confidence": 0.93,
+      "probabilities": {
+        "continue": 0.02,
+        "replan": 0.96,
+        "clarify": 0.02
+      }
+    },
+    "txre8": {
+      "type": "choice",
+      "choice": "continue",
+      "confidence": 0.59,
+      "probabilities": {
+        "continue": 0.73,
+        "replan": 0.07,
+        "clarify": 0.2
+      }
+    },
+    "t7cfs": {
+      "type": "choice",
+      "choice": "replan",
+      "confidence": 0.99,
+      "probabilities": {
+        "continue": 0.01,
+        "replan": 0.99,
+        "clarify": 0.0
+      }
+    },
+    "t2vwc": {
+      "type": "choice",
+      "choice": "replan",
+      "confidence": 0.97,
+      "probabilities": {
+        "continue": 0.02,
+        "replan": 0.98,
+        "clarify": 0.0
+      }
+    },
+    "tj75q": {
+      "type": "choice",
+      "choice": "continue",
+      "confidence": 0.8,
+      "probabilities": {
+        "continue": 0.87,
+        "replan": 0.11,
+        "clarify": 0.02
+      }
+    },
+    "tvkkq": {
+      "type": "choice",
+      "choice": "replan",
+      "confidence": 0.94,
+      "probabilities": {
+        "continue": 0.04,
+        "replan": 0.95,
+        "clarify": 0.01
+      }
+    },
+    "tmfaa": {
+      "type": "choice",
+      "choice": "continue",
+      "confidence": 0.58,
+      "probabilities": {
+        "continue": 0.72,
+        "replan": 0.23,
+        "clarify": 0.05
+      }
+    },
+    "tv6ae": {
+      "type": "choice",
+      "choice": "replan",
+      "confidence": 0.97,
+      "probabilities": {
+        "continue": 0.01,
+        "clarify": 0.01,
+        "replan": 0.98
+      }
+    },
+    "tx8wv": {
+      "type": "choice",
+      "choice": "replan",
+      "confidence": 0.54,
+      "probabilities": {
+        "continue": 0.28,
+        "replan": 0.7,
+        "clarify": 0.02
+      }
+    },
+    "tgdvm": {
+      "type": "choice",
+      "choice": "clarify",
+      "confidence": 0.77,
+      "probabilities": {
+        "continue": 0.15,
+        "replan": 0.0,
+        "clarify": 0.85
+      }
+    },
+    "tpq5z": {
+      "type": "choice",
+      "choice": "clarify",
+      "confidence": 0.71,
+      "probabilities": {
+        "continue": 0.14,
+        "clarify": 0.81,
+        "replan": 0.05
+      }
+    },
+    "tjqbf": {
+      "type": "choice",
+      "choice": "continue",
+      "confidence": 0.5,
+      "probabilities": {
+        "continue": 0.67,
+        "replan": 0.22,
+        "clarify": 0.11
+      }
+    },
+    "tghng": {
+      "type": "choice",
+      "choice": "continue",
+      "confidence": 0.77,
+      "probabilities": {
+        "continue": 0.85,
+        "replan": 0.12,
+        "clarify": 0.03
+      }
+    }
+  },
+  "usage": {
+    "input_tokens": 14016,
+    "output_tokens": 1923
+  }
+}

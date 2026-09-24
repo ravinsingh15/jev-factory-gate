@@ -1,0 +1,406 @@
+{
+  "always_continue": {
+    "all": 24,
+    "base": 8,
+    "counterfactual": 16,
+    "gate_binary": 24,
+    "false_continue": [
+      "t5fr4",
+      "ttvqt",
+      "tash4",
+      "tdere",
+      "taakq",
+      "tgpux",
+      "tw9n8",
+      "tt7kp",
+      "twzhs",
+      "tzpnt",
+      "taeka",
+      "tdykw",
+      "tbwux",
+      "takyn",
+      "ttcgv",
+      "tyjug",
+      "tdc39",
+      "tbtk9",
+      "tan3s",
+      "tpdr2",
+      "tpnxs",
+      "t7cfs",
+      "t2vwc",
+      "tv6ae"
+    ],
+    "false_hold": [],
+    "unparsed": [],
+    "confusion": {
+      "clarify->continue": 8,
+      "continue->continue": 24,
+      "replan->continue": 16
+    }
+  },
+  "old_regex_update_only": {
+    "all": 24,
+    "base": 13,
+    "counterfactual": 11,
+    "gate_binary": 24,
+    "false_continue": [
+      "t5fr4",
+      "ttvqt",
+      "tash4",
+      "tdere",
+      "tw9n8",
+      "tt7kp",
+      "tzpnt",
+      "taeka",
+      "tdykw",
+      "tbwux",
+      "takyn",
+      "ttcgv",
+      "tyjug",
+      "tbtk9",
+      "tan3s",
+      "tpnxs",
+      "t7cfs",
+      "t2vwc",
+      "tv6ae"
+    ],
+    "false_hold": [
+      "tb9x2",
+      "tqq77",
+      "tpmh8",
+      "tjm8d",
+      "tpq5z"
+    ],
+    "unparsed": [],
+    "confusion": {
+      "clarify->clarify": 1,
+      "clarify->continue": 7,
+      "continue->clarify": 1,
+      "continue->continue": 19,
+      "continue->replan": 4,
+      "replan->continue": 12,
+      "replan->replan": 4
+    }
+  },
+  "jev-run-1": {
+    "all": 35,
+    "base": 23,
+    "counterfactual": 12,
+    "gate_binary": 35,
+    "false_continue": [],
+    "false_hold": [
+      "tv9kq",
+      "tvsg5",
+      "ts4hn",
+      "tb9x2",
+      "tvad4",
+      "tm3z2",
+      "tdt2e",
+      "tf2rb",
+      "tjm8d",
+      "tvkkq",
+      "tx8wv",
+      "tgdvm",
+      "tpq5z"
+    ],
+    "unparsed": [],
+    "confusion": {
+      "clarify->clarify": 8,
+      "continue->clarify": 7,
+      "continue->continue": 11,
+      "continue->replan": 6,
+      "replan->replan": 16
+    }
+  },
+  "jev-run-2": {
+    "all": 35,
+    "base": 23,
+    "counterfactual": 12,
+    "gate_binary": 35,
+    "false_continue": [],
+    "false_hold": [
+      "tv9kq",
+      "tvsg5",
+      "ts4hn",
+      "tb9x2",
+      "tvad4",
+      "tm3z2",
+      "tdt2e",
+      "tf2rb",
+      "tjm8d",
+      "tvkkq",
+      "tx8wv",
+      "tgdvm",
+      "tpq5z"
+    ],
+    "unparsed": [],
+    "confusion": {
+      "clarify->clarify": 8,
+      "continue->clarify": 7,
+      "continue->continue": 11,
+      "continue->replan": 6,
+      "replan->replan": 16
+    }
+  },
+  "jev-run-3": {
+    "all": 34,
+    "base": 23,
+    "counterfactual": 11,
+    "gate_binary": 34,
+    "false_continue": [
+      "tash4"
+    ],
+    "false_hold": [
+      "tv9kq",
+      "tvsg5",
+      "ts4hn",
+      "tb9x2",
+      "tvad4",
+      "tm3z2",
+      "tdt2e",
+      "tf2rb",
+      "tjm8d",
+      "tvkkq",
+      "tx8wv",
+      "tgdvm",
+      "tpq5z"
+    ],
+    "unparsed": [],
+    "confusion": {
+      "clarify->clarify": 8,
+      "continue->clarify": 7,
+      "continue->continue": 11,
+      "continue->replan": 6,
+      "replan->continue": 1,
+      "replan->replan": 15
+    }
+  },
+  "jev-percase-run-1": {
+    "all": 34,
+    "base": 22,
+    "counterfactual": 12,
+    "gate_binary": 34,
+    "false_continue": [],
+    "false_hold": [
+      "tv9kq",
+      "tvsg5",
+      "ts4hn",
+      "tb9x2",
+      "tvad4",
+      "tm3z2",
+      "tdt2e",
+      "tqq77",
+      "tf2rb",
+      "tvkkq",
+      "tmfaa",
+      "tx8wv",
+      "tgdvm",
+      "tpq5z"
+    ],
+    "unparsed": [],
+    "confusion": {
+      "clarify->clarify": 8,
+      "continue->clarify": 7,
+      "continue->continue": 10,
+      "continue->replan": 7,
+      "replan->replan": 16
+    }
+  },
+  "jev-percase-run-2": {
+    "all": 34,
+    "base": 21,
+    "counterfactual": 13,
+    "gate_binary": 34,
+    "false_continue": [],
+    "false_hold": [
+      "tv9kq",
+      "tvsg5",
+      "ts4hn",
+      "tb9x2",
+      "tvad4",
+      "tm3z2",
+      "tdt2e",
+      "tqq77",
+      "tf2rb",
+      "tmfaa",
+      "tx8wv",
+      "tgdvm",
+      "tpq5z",
+      "tghng"
+    ],
+    "unparsed": [],
+    "confusion": {
+      "clarify->clarify": 8,
+      "continue->clarify": 7,
+      "continue->continue": 10,
+      "continue->replan": 7,
+      "replan->replan": 16
+    }
+  },
+  "jev-percase-run-3": {
+    "all": 34,
+    "base": 22,
+    "counterfactual": 12,
+    "gate_binary": 34,
+    "false_continue": [],
+    "false_hold": [
+      "tv9kq",
+      "tvsg5",
+      "ts4hn",
+      "tb9x2",
+      "tvad4",
+      "tm3z2",
+      "tdt2e",
+      "tqq77",
+      "tf2rb",
+      "tvkkq",
+      "tmfaa",
+      "tx8wv",
+      "tgdvm",
+      "tpq5z"
+    ],
+    "unparsed": [],
+    "confusion": {
+      "clarify->clarify": 8,
+      "continue->clarify": 7,
+      "continue->continue": 10,
+      "continue->replan": 7,
+      "replan->replan": 16
+    }
+  },
+  "llm-run-1": {
+    "all": 35,
+    "base": 23,
+    "counterfactual": 12,
+    "gate_binary": 35,
+    "false_continue": [],
+    "false_hold": [
+      "tvsg5",
+      "ts4hn",
+      "tvad4",
+      "tm3z2",
+      "tdt2e",
+      "tqq77",
+      "tf2rb",
+      "tjm8d",
+      "tj75q",
+      "tvkkq",
+      "tx8wv",
+      "tgdvm",
+      "tpq5z"
+    ],
+    "unparsed": [],
+    "confusion": {
+      "clarify->clarify": 8,
+      "continue->clarify": 6,
+      "continue->continue": 11,
+      "continue->replan": 7,
+      "replan->replan": 16
+    }
+  },
+  "llm-run-2": {
+    "all": 35,
+    "base": 23,
+    "counterfactual": 12,
+    "gate_binary": 35,
+    "false_continue": [],
+    "false_hold": [
+      "tvsg5",
+      "ts4hn",
+      "tvad4",
+      "tm3z2",
+      "tdt2e",
+      "tqq77",
+      "tf2rb",
+      "tjm8d",
+      "tj75q",
+      "tvkkq",
+      "tx8wv",
+      "tgdvm",
+      "tpq5z"
+    ],
+    "unparsed": [],
+    "confusion": {
+      "clarify->clarify": 8,
+      "continue->clarify": 6,
+      "continue->continue": 11,
+      "continue->replan": 7,
+      "replan->replan": 16
+    }
+  },
+  "llm-run-3": {
+    "all": 34,
+    "base": 22,
+    "counterfactual": 12,
+    "gate_binary": 34,
+    "false_continue": [],
+    "false_hold": [
+      "tvsg5",
+      "ts4hn",
+      "tvad4",
+      "tm3z2",
+      "tdt2e",
+      "tqq77",
+      "tf2rb",
+      "tjm8d",
+      "tj75q",
+      "tvkkq",
+      "tmfaa",
+      "tx8wv",
+      "tgdvm",
+      "tpq5z"
+    ],
+    "unparsed": [],
+    "confusion": {
+      "clarify->clarify": 8,
+      "continue->clarify": 6,
+      "continue->continue": 10,
+      "continue->replan": 8,
+      "replan->replan": 16
+    }
+  },
+  "jev_batch_vs_llm": {
+    "agree": 43,
+    "kappa": 0.836,
+    "disagree": [
+      "tv9kq",
+      "tb9x2",
+      "tqq77",
+      "tj75q",
+      "tpq5z"
+    ]
+  },
+  "jev_percase_vs_llm": {
+    "agree": 42,
+    "kappa": 0.802,
+    "disagree": [
+      "tv9kq",
+      "tb9x2",
+      "tjm8d",
+      "tj75q",
+      "tmfaa",
+      "tpq5z"
+    ]
+  },
+  "jev_batch_vs_jev_percase": {
+    "agree": 45,
+    "kappa": 0.902,
+    "disagree": [
+      "tqq77",
+      "tjm8d",
+      "tmfaa"
+    ]
+  },
+  "criteria": {
+    "jev_batch": {
+      "C1 counterfactual >= 21/24 every run": false,
+      "C2 overall >= 43/48 every run": false,
+      "C3 at most 1 false continue per run": true
+    },
+    "jev_percase": {
+      "C1 counterfactual >= 21/24 every run": false,
+      "C2 overall >= 43/48 every run": false,
+      "C3 at most 1 false continue per run": true
+    }
+  }
+}

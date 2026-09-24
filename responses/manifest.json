@@ -1,0 +1,40 @@
+{
+  "started": "2026-09-24T10:11:53.170770+00:00",
+  "finished": "2026-09-24T10:24:28.533928+00:00",
+  "mock": false,
+  "git_commit": "54697a2c8d925e4d4b6f743ddf38001f177a9090",
+  "hashes": {
+    "answer_key.json": "d0d1edab541f320a0f41f1a286d0c06ca95214380e38dac673975a8e33df418b",
+    "jev_request.json": "7ff7c3d7d00cf2043d205f90e14e2310b0b702d03d14f1be40cc7649181729fb",
+    "judge_cases.json": "3bfc5f49c26c407531fa613d83fadaad814800e49bb936ee81a4a39562fb3504"
+  },
+  "runs": 3,
+  "judge_model": "anthropic/claude-sonnet-4-5 (via LiteLLM proxy)",
+  "judge_key": "LiteLLM proxy virtual key (no other traffic during the run)",
+  "jev_batch_calls": [
+    {
+      "kind": "jev_batch",
+      "run": 1,
+      "wall_ms": 1085.9,
+      "request_id": null,
+      "model": "jev-1.13.0",
+      "at": "2026-09-24T10:11:54.257563+00:00"
+    },
+    {
+      "kind": "jev_batch",
+      "run": 2,
+      "wall_ms": 1018.8,
+      "request_id": null,
+      "model": "jev-1.13.0",
+      "at": "2026-09-24T10:11:55.276809+00:00"
+    },
+    {
+      "kind": "jev_batch",
+      "run": 3,
+      "wall_ms": 1026.1,
+      "request_id": null,
+      "model": "jev-1.13.0",
+      "at": "2026-09-24T10:11:56.303310+00:00"
+    }
+  ]
+}
