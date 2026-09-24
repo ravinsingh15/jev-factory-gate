@@ -32,7 +32,7 @@ cp .env.example .env      # TYPESAFE_API_KEY, JUDGE_MODEL, optional LiteLLM prox
 python3 run_all.py mock   # rehearsal: whole pipeline with fake data, no network, no cost
 ```
 
-**2. Freeze.** Run `python3 run_all.py freeze`. It rebuilds the set and commits it to a local git repo. Nothing is pushed: this experiment stays local. The local commit and the SHA-256 hashes in `FREEZE.txt` record the labels before any run, but they are not public proof. `.env` is git-ignored.
+**2. Freeze.** Run `python3 run_all.py freeze`. It rebuilds the set and commits it to a local git repo; the script itself never pushes. This repo was published to GitHub only after the run, on 2026-09-24. So the freeze commit's timestamp and the SHA-256 hashes in `FREEZE.txt` record the labels before any run on the author's machine, but they are not independent public proof. `.env` is git-ignored.
 
 **3. Run.** Run `python3 run_all.py run`. It won't start if the test set has changed since the freeze, and it asks you to type RUN before any billable call. It then runs, 3 times each:
 - a Jev batch request (48 questions in one request);

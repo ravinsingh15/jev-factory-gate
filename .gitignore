@@ -3,3 +3,7 @@ responses-mock/
 __pycache__/
 *.pyc
 .venv/
+.DS_Store
+show_run.py
+drafts/
+HANDOFF.md

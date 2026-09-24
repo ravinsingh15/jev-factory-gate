@@ -1,7 +1,7 @@
 """One command for the whole experiment, after you have reviewed the labels.
 
     cp .env.example .env        # fill in keys once; .env is git-ignored
-    python3 run_all.py freeze   # hash the test set and commit it to a LOCAL git repo (never pushed)
+    python3 run_all.py freeze   # hash the test set and commit it to the local git repo (does not push)
     python3 run_all.py run      # Jev batch + Jev per-case + LLM judge, 3 runs each, then score
     python3 run_all.py mock     # full pipeline with fake responses, no network, no cost
 
@@ -41,14 +41,14 @@ def git(*args, check=True):
 
 # ---------- freeze ----------
 def freeze(a):
-    # Local only by decision (2026-09-24): nothing from this experiment is pushed anywhere.
+    # Commits locally only; this script never pushes.
     subprocess.run([sys.executable, "build.py"], cwd=HERE, check=True)
     if not (HERE / ".git").exists():
         git("init", "-b", "main")
     git("add", "-A")
     if git("status", "--porcelain"):
         git("commit", "-m", "Freeze factory-gate test set before any model run")
-    print(f"Committed {git('rev-parse', 'HEAD')[:10]} locally. Not pushed (local-only experiment).")
+    print(f"Committed {git('rev-parse', 'HEAD')[:10]} locally. Not pushed.")
 
 
 def check_frozen():
