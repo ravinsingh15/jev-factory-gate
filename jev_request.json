@@ -1,0 +1,825 @@
+{
+  "model": "jev-latest",
+  "state": {
+    "cases": {
+      "t5fr4": {
+        "ticket": "Roll out the new search ranking to all tenants now that the pilot has passed.",
+        "pending_step": {
+          "stage": "Deploy",
+          "action": "Set the search-ranking feature flag to 100% of tenants."
+        },
+        "ticket_update": "Legal is checking whether EU tenants need to opt in first; no answer yet."
+      },
+      "ttvqt": {
+        "ticket": "Replace the v1 /users endpoint with v2. Removing v1 is approved.",
+        "pending_step": {
+          "stage": "Coding",
+          "action": "Delete the v1 /users route and its handler."
+        },
+        "ticket_update": "The partner integration still calls v1 and has to keep working until next year."
+      },
+      "th6d2": {
+        "ticket": "Implement the approved 7-day retention for debug logs.",
+        "pending_step": {
+          "stage": "Coding",
+          "action": "Write the cleanup job that deletes debug logs older than 7 days."
+        },
+        "ticket_update": "Run the cleanup nightly at 02:00 instead of hourly."
+      },
+      "tash4": {
+        "ticket": "Make the payment webhook handler resilient: retry failed deliveries with exponential backoff, max 5 attempts.",
+        "pending_step": {
+          "stage": "Coding",
+          "action": "Remove the metrics client dependency from the webhook module."
+        },
+        "ticket_update": "Also emit a metric with the number of retry attempts per delivery."
+      },
+      "tv9kq": {
+        "ticket": "Implement the approved 7-day retention for debug logs.",
+        "pending_step": {
+          "stage": "Coding",
+          "action": "Write the cleanup job that deletes debug logs older than 30 days."
+        },
+        "ticket_update": "Compliance now requires keeping debug logs for 30 days."
+      },
+      "tdere": {
+        "ticket": "Build the monthly partner export with customer name and email.",
+        "pending_step": {
+          "stage": "Coding",
+          "action": "Add customer name and email columns to the export query."
+        },
+        "ticket_update": "Privacy is reviewing which fields partners may receive; the list is not ready."
+      },
+      "taakq": {
+        "ticket": "Build the monthly partner export with customer name and email.",
+        "pending_step": {
+          "stage": "Coding",
+          "action": "Add customer name and email columns to the export query."
+        },
+        "ticket_update": "The partner export must no longer contain any personal data."
+      },
+      "tgpux": {
+        "ticket": "Roll out the new search ranking to all tenants now that the pilot has passed.",
+        "pending_step": {
+          "stage": "Deploy",
+          "action": "Set the search-ranking feature flag to 100% of tenants."
+        },
+        "ticket_update": "Only internal tenants get the new ranking this sprint."
+      },
+      "tw9n8": {
+        "ticket": "Build the monthly partner export with customer name and email.",
+        "pending_step": {
+          "stage": "Coding",
+          "action": "Write the export output to a file named export.csv."
+        },
+        "ticket_update": "Name the output file partner_export_<yyyy-mm>.csv."
+      },
+      "tvsg5": {
+        "ticket": "Make the payment webhook handler resilient: retry failed deliveries with exponential backoff, max 5 attempts.",
+        "pending_step": {
+          "stage": "Coding",
+          "action": "Write a test fixture that simulates the webhook endpoint returning HTTP 503."
+        },
+        "ticket_update": "Security is checking whether handler retries can cause duplicate charges; waiting on their answer."
+      },
+      "ts4hn": {
+        "ticket": "Provision a staging worker pool of two workers for the ingestion service in us-east-1.",
+        "pending_step": {
+          "stage": "Coding",
+          "action": "Write the Terraform for the staging worker pool in us-east-1 with the requested worker count."
+        },
+        "ticket_update": "Make it four workers instead of two; the region stays the same."
+      },
+      "tb9x2": {
+        "ticket": "Upgrade the service to LibX 3, which needs Runtime 20. The runtime upgrade is approved.",
+        "pending_step": {
+          "stage": "Coding",
+          "action": "Pin LibX to the latest 2.x release, which supports Runtime 18."
+        },
+        "ticket_update": "Platform team: this service must stay on Runtime 18 this quarter; use the latest LibX 2.x until then."
+      },
+      "tt7kp": {
+        "ticket": "Upgrade the service to LibX 3, which needs Runtime 20. The runtime upgrade is approved.",
+        "pending_step": {
+          "stage": "Coding",
+          "action": "Bump the service base image to Runtime 20 and install LibX 3."
+        },
+        "ticket_update": "Platform may freeze runtime versions this quarter; they decide next week."
+      },
+      "tvad4": {
+        "ticket": "Provision a staging worker pool of two workers for the ingestion service in us-east-1.",
+        "pending_step": {
+          "stage": "Coding",
+          "action": "Write the container image build for the ingestion worker."
+        },
+        "ticket_update": "Infra may consolidate all staging into one region; the decision is expected Friday."
+      },
+      "twzhs": {
+        "ticket": "Provision a staging worker pool of two workers for the ingestion service in us-east-1.",
+        "pending_step": {
+          "stage": "Coding",
+          "action": "Write the Terraform for the staging worker pool in us-east-1 with the requested worker count."
+        },
+        "ticket_update": "New policy: all staging workloads must run in EU regions."
+      },
+      "tm3z2": {
+        "ticket": "Build the monthly partner export with customer name and email.",
+        "pending_step": {
+          "stage": "Coding",
+          "action": "Schedule the export to run on the first day of each month."
+        },
+        "ticket_update": "Privacy is reviewing which fields partners may receive; the list is not ready."
+      },
+      "tzpnt": {
+        "ticket": "Migrate the orders table from integer order_id to UUID. Dropping the integer column is approved once all reads use the UUID.",
+        "pending_step": {
+          "stage": "Coding",
+          "action": "Write the migration that drops the integer order_id column."
+        },
+        "ticket_update": "Keep the integer order_id column indefinitely; the finance export still reads it."
+      },
+      "taeka": {
+        "ticket": "Provision a staging worker pool of two workers for the ingestion service in us-east-1.",
+        "pending_step": {
+          "stage": "Coding",
+          "action": "Write the Terraform for the staging worker pool in us-east-1 with the requested worker count."
+        },
+        "ticket_update": "Infra may consolidate all staging into one region; the decision is expected Friday."
+      },
+      "tdykw": {
+        "ticket": "Replace the v1 /users endpoint with v2. Removing v1 is approved.",
+        "pending_step": {
+          "stage": "Coding",
+          "action": "Delete the v1 /users route and its handler."
+        },
+        "ticket_update": "Some traffic to v1 still shows up in the logs; we are identifying the caller."
+      },
+      "tg8xz": {
+        "ticket": "Replace the v1 /users endpoint with v2. Removing v1 is approved.",
+        "pending_step": {
+          "stage": "Coding",
+          "action": "Delete the v1 /users route and its handler."
+        },
+        "ticket_update": "The last v1 consumer, the mobile app, shipped its v2 migration today."
+      },
+      "tdt2e": {
+        "ticket": "Migrate the orders table from integer order_id to UUID. Dropping the integer column is approved once all reads use the UUID.",
+        "pending_step": {
+          "stage": "Coding",
+          "action": "Add an index on the new UUID column."
+        },
+        "ticket_update": "The data team flagged a possible dependency on order_id and will confirm which jobs use it."
+      },
+      "tbwux": {
+        "ticket": "Implement the approved 7-day retention for debug logs.",
+        "pending_step": {
+          "stage": "Coding",
+          "action": "Write the cleanup job that deletes debug logs older than 7 days."
+        },
+        "ticket_update": "Compliance now requires keeping debug logs for 30 days."
+      },
+      "takyn": {
+        "ticket": "Migrate the orders table from integer order_id to UUID. Dropping the integer column is approved once all reads use the UUID.",
+        "pending_step": {
+          "stage": "Coding",
+          "action": "Change the reporting job to read the integer order_id column."
+        },
+        "ticket_update": "All read paths now use the UUID column; the reporting job was switched over yesterday."
+      },
+      "t4cyb": {
+        "ticket": "Roll out the new search ranking to all tenants now that the pilot has passed.",
+        "pending_step": {
+          "stage": "Deploy",
+          "action": "Set the search-ranking feature flag to 100% of tenants."
+        },
+        "ticket_update": "Pilot metrics are final; attach them to the release notes."
+      },
+      "ttcgv": {
+        "ticket": "Make the payment webhook handler resilient: retry failed deliveries with exponential backoff, max 5 attempts.",
+        "pending_step": {
+          "stage": "Coding",
+          "action": "Implement exponential-backoff retry, max 5 attempts, inside the webhook handler."
+        },
+        "ticket_update": "Security is checking whether handler retries can cause duplicate charges; waiting on their answer."
+      },
+      "tyjug": {
+        "ticket": "Replace the v1 /users endpoint with v2. Removing v1 is approved.",
+        "pending_step": {
+          "stage": "Coding",
+          "action": "Add a new field to the v1 /users response for the mobile app."
+        },
+        "ticket_update": "The last v1 consumer, the mobile app, shipped its v2 migration today."
+      },
+      "tdc39": {
+        "ticket": "Implement the approved 7-day retention for debug logs.",
+        "pending_step": {
+          "stage": "Coding",
+          "action": "Write the cleanup job that deletes debug logs older than 7 days."
+        },
+        "ticket_update": "Compliance is revising the retention period; the new number has not been shared."
+      },
+      "t87tv": {
+        "ticket": "Migrate the orders table from integer order_id to UUID. Dropping the integer column is approved once all reads use the UUID.",
+        "pending_step": {
+          "stage": "Coding",
+          "action": "Write the migration that drops the integer order_id column."
+        },
+        "ticket_update": "All read paths now use the UUID column; the reporting job was switched over yesterday."
+      },
+      "tbtk9": {
+        "ticket": "Migrate the orders table from integer order_id to UUID. Dropping the integer column is approved once all reads use the UUID.",
+        "pending_step": {
+          "stage": "Coding",
+          "action": "Write the migration that drops the integer order_id column."
+        },
+        "ticket_update": "The data team flagged a possible dependency on order_id and will confirm which jobs use it."
+      },
+      "tan3s": {
+        "ticket": "Make the payment webhook handler resilient: retry failed deliveries with exponential backoff, max 5 attempts.",
+        "pending_step": {
+          "stage": "Coding",
+          "action": "Implement exponential-backoff retry, max 5 attempts, inside the webhook handler."
+        },
+        "ticket_update": "Product decided there will be no retries in the handler; failed deliveries go to a dead-letter queue instead."
+      },
+      "tpdr2": {
+        "ticket": "Upgrade the service to LibX 3, which needs Runtime 20. The runtime upgrade is approved.",
+        "pending_step": {
+          "stage": "Coding",
+          "action": "Bump the service base image to Runtime 20 and install LibX 3."
+        },
+        "ticket_update": "Platform team: this service must stay on Runtime 18 this quarter; use the latest LibX 2.x until then."
+      },
+      "tqq77": {
+        "ticket": "Provision a staging worker pool of two workers for the ingestion service in us-east-1.",
+        "pending_step": {
+          "stage": "Coding",
+          "action": "Write the Terraform for the staging worker pool in eu-north-1 with the requested worker count."
+        },
+        "ticket_update": "New policy: all staging workloads must run in EU regions."
+      },
+      "tpnxs": {
+        "ticket": "Upgrade the service to LibX 3, which needs Runtime 20. The runtime upgrade is approved.",
+        "pending_step": {
+          "stage": "Coding",
+          "action": "Add a CI step that downloads and installs Runtime 20 manually."
+        },
+        "ticket_update": "CI runners now ship Runtime 20, so drop the custom runtime install step from the pipeline."
+      },
+      "tf2rb": {
+        "ticket": "Roll out the new search ranking to all tenants now that the pilot has passed.",
+        "pending_step": {
+          "stage": "Docs",
+          "action": "Draft the release notes describing the ranking change."
+        },
+        "ticket_update": "Legal is checking whether EU tenants need to opt in first; no answer yet."
+      },
+      "tpmh8": {
+        "ticket": "Roll out the new search ranking to all tenants now that the pilot has passed.",
+        "pending_step": {
+          "stage": "Deploy",
+          "action": "Turn the search-ranking feature flag on for internal tenants."
+        },
+        "ticket_update": "Only internal tenants get the new ranking this sprint."
+      },
+      "tjm8d": {
+        "ticket": "Build the monthly partner export with customer name and email.",
+        "pending_step": {
+          "stage": "Coding",
+          "action": "Add a per-region order count column to the export query."
+        },
+        "ticket_update": "The partner export must no longer contain any personal data."
+      },
+      "txre8": {
+        "ticket": "Replace the v1 /users endpoint with v2. Removing v1 is approved.",
+        "pending_step": {
+          "stage": "Docs",
+          "action": "Write the OpenAPI documentation for v2 /users."
+        },
+        "ticket_update": "Some traffic to v1 still shows up in the logs; we are identifying the caller."
+      },
+      "t7cfs": {
+        "ticket": "Roll out the new search ranking to all tenants now that the pilot has passed.",
+        "pending_step": {
+          "stage": "Docs",
+          "action": "Publish the release notes without any pilot metrics."
+        },
+        "ticket_update": "Pilot metrics are final; attach them to the release notes."
+      },
+      "t2vwc": {
+        "ticket": "Provision a staging worker pool of two workers for the ingestion service in us-east-1.",
+        "pending_step": {
+          "stage": "Coding",
+          "action": "Write the Terraform for a two-worker staging pool in us-east-1."
+        },
+        "ticket_update": "Make it four workers instead of two; the region stays the same."
+      },
+      "tj75q": {
+        "ticket": "Replace the v1 /users endpoint with v2. Removing v1 is approved.",
+        "pending_step": {
+          "stage": "Coding",
+          "action": "Add a deprecation warning header to v1 /users responses."
+        },
+        "ticket_update": "The partner integration still calls v1 and has to keep working until next year."
+      },
+      "tvkkq": {
+        "ticket": "Make the payment webhook handler resilient: retry failed deliveries with exponential backoff, max 5 attempts.",
+        "pending_step": {
+          "stage": "Coding",
+          "action": "Add structured logging of failed webhook deliveries with their event IDs."
+        },
+        "ticket_update": "Product decided there will be no retries in the handler; failed deliveries go to a dead-letter queue instead."
+      },
+      "tmfaa": {
+        "ticket": "Upgrade the service to LibX 3, which needs Runtime 20. The runtime upgrade is approved.",
+        "pending_step": {
+          "stage": "Coding",
+          "action": "Bump the service base image to Runtime 20 and install LibX 3."
+        },
+        "ticket_update": "CI runners now ship Runtime 20, so drop the custom runtime install step from the pipeline."
+      },
+      "tv6ae": {
+        "ticket": "Implement the approved 7-day retention for debug logs.",
+        "pending_step": {
+          "stage": "Coding",
+          "action": "Set the cleanup job's schedule to run every hour."
+        },
+        "ticket_update": "Run the cleanup nightly at 02:00 instead of hourly."
+      },
+      "tx8wv": {
+        "ticket": "Migrate the orders table from integer order_id to UUID. Dropping the integer column is approved once all reads use the UUID.",
+        "pending_step": {
+          "stage": "Coding",
+          "action": "Add a non-null UUID column to orders and backfill it."
+        },
+        "ticket_update": "Keep the integer order_id column indefinitely; the finance export still reads it."
+      },
+      "tgdvm": {
+        "ticket": "Upgrade the service to LibX 3, which needs Runtime 20. The runtime upgrade is approved.",
+        "pending_step": {
+          "stage": "Research",
+          "action": "Run the existing test suite against LibX 3 in a local Runtime 20 container and record failures."
+        },
+        "ticket_update": "Platform may freeze runtime versions this quarter; they decide next week."
+      },
+      "tpq5z": {
+        "ticket": "Implement the approved 7-day retention for debug logs.",
+        "pending_step": {
+          "stage": "Coding",
+          "action": "Add a dry-run mode that lists which logs the cleanup would delete."
+        },
+        "ticket_update": "Compliance is revising the retention period; the new number has not been shared."
+      },
+      "tjqbf": {
+        "ticket": "Build the monthly partner export with customer name and email.",
+        "pending_step": {
+          "stage": "Coding",
+          "action": "Add customer name and email columns to the export query."
+        },
+        "ticket_update": "Name the output file partner_export_<yyyy-mm>.csv."
+      },
+      "tghng": {
+        "ticket": "Make the payment webhook handler resilient: retry failed deliveries with exponential backoff, max 5 attempts.",
+        "pending_step": {
+          "stage": "Coding",
+          "action": "Implement exponential-backoff retry, max 5 attempts, inside the webhook handler."
+        },
+        "ticket_update": "Also emit a metric with the number of retry attempts per delivery."
+      }
+    }
+  },
+  "questions": {
+    "t5fr4": {
+      "type": "choice",
+      "instructions": "Evaluate only `cases.t5fr4`. An automated software-delivery pipeline is about to run this case's pending_step for its ticket. Given the ticket and the ticket_update, is the pending_step still right to run exactly as written? Treat each case independently. Judge fit with the current requirements only, not permissions or code quality.",
+      "criteria": {
+        "continue": "The pending step is still consistent with the ticket as updated. The pipeline should run it.",
+        "replan": "The update makes this pending step wrong as written, whatever any still-missing details turn out to be. The ticket should go back to planning.",
+        "clarify": "Whether this pending step is still right depends on a decision or information that is not available yet. The pipeline should pause for a human."
+      }
+    },
+    "ttvqt": {
+      "type": "choice",
+      "instructions": "Evaluate only `cases.ttvqt`. An automated software-delivery pipeline is about to run this case's pending_step for its ticket. Given the ticket and the ticket_update, is the pending_step still right to run exactly as written? Treat each case independently. Judge fit with the current requirements only, not permissions or code quality.",
+      "criteria": {
+        "continue": "The pending step is still consistent with the ticket as updated. The pipeline should run it.",
+        "replan": "The update makes this pending step wrong as written, whatever any still-missing details turn out to be. The ticket should go back to planning.",
+        "clarify": "Whether this pending step is still right depends on a decision or information that is not available yet. The pipeline should pause for a human."
+      }
+    },
+    "th6d2": {
+      "type": "choice",
+      "instructions": "Evaluate only `cases.th6d2`. An automated software-delivery pipeline is about to run this case's pending_step for its ticket. Given the ticket and the ticket_update, is the pending_step still right to run exactly as written? Treat each case independently. Judge fit with the current requirements only, not permissions or code quality.",
+      "criteria": {
+        "continue": "The pending step is still consistent with the ticket as updated. The pipeline should run it.",
+        "replan": "The update makes this pending step wrong as written, whatever any still-missing details turn out to be. The ticket should go back to planning.",
+        "clarify": "Whether this pending step is still right depends on a decision or information that is not available yet. The pipeline should pause for a human."
+      }
+    },
+    "tash4": {
+      "type": "choice",
+      "instructions": "Evaluate only `cases.tash4`. An automated software-delivery pipeline is about to run this case's pending_step for its ticket. Given the ticket and the ticket_update, is the pending_step still right to run exactly as written? Treat each case independently. Judge fit with the current requirements only, not permissions or code quality.",
+      "criteria": {
+        "continue": "The pending step is still consistent with the ticket as updated. The pipeline should run it.",
+        "replan": "The update makes this pending step wrong as written, whatever any still-missing details turn out to be. The ticket should go back to planning.",
+        "clarify": "Whether this pending step is still right depends on a decision or information that is not available yet. The pipeline should pause for a human."
+      }
+    },
+    "tv9kq": {
+      "type": "choice",
+      "instructions": "Evaluate only `cases.tv9kq`. An automated software-delivery pipeline is about to run this case's pending_step for its ticket. Given the ticket and the ticket_update, is the pending_step still right to run exactly as written? Treat each case independently. Judge fit with the current requirements only, not permissions or code quality.",
+      "criteria": {
+        "continue": "The pending step is still consistent with the ticket as updated. The pipeline should run it.",
+        "replan": "The update makes this pending step wrong as written, whatever any still-missing details turn out to be. The ticket should go back to planning.",
+        "clarify": "Whether this pending step is still right depends on a decision or information that is not available yet. The pipeline should pause for a human."
+      }
+    },
+    "tdere": {
+      "type": "choice",
+      "instructions": "Evaluate only `cases.tdere`. An automated software-delivery pipeline is about to run this case's pending_step for its ticket. Given the ticket and the ticket_update, is the pending_step still right to run exactly as written? Treat each case independently. Judge fit with the current requirements only, not permissions or code quality.",
+      "criteria": {
+        "continue": "The pending step is still consistent with the ticket as updated. The pipeline should run it.",
+        "replan": "The update makes this pending step wrong as written, whatever any still-missing details turn out to be. The ticket should go back to planning.",
+        "clarify": "Whether this pending step is still right depends on a decision or information that is not available yet. The pipeline should pause for a human."
+      }
+    },
+    "taakq": {
+      "type": "choice",
+      "instructions": "Evaluate only `cases.taakq`. An automated software-delivery pipeline is about to run this case's pending_step for its ticket. Given the ticket and the ticket_update, is the pending_step still right to run exactly as written? Treat each case independently. Judge fit with the current requirements only, not permissions or code quality.",
+      "criteria": {
+        "continue": "The pending step is still consistent with the ticket as updated. The pipeline should run it.",
+        "replan": "The update makes this pending step wrong as written, whatever any still-missing details turn out to be. The ticket should go back to planning.",
+        "clarify": "Whether this pending step is still right depends on a decision or information that is not available yet. The pipeline should pause for a human."
+      }
+    },
+    "tgpux": {
+      "type": "choice",
+      "instructions": "Evaluate only `cases.tgpux`. An automated software-delivery pipeline is about to run this case's pending_step for its ticket. Given the ticket and the ticket_update, is the pending_step still right to run exactly as written? Treat each case independently. Judge fit with the current requirements only, not permissions or code quality.",
+      "criteria": {
+        "continue": "The pending step is still consistent with the ticket as updated. The pipeline should run it.",
+        "replan": "The update makes this pending step wrong as written, whatever any still-missing details turn out to be. The ticket should go back to planning.",
+        "clarify": "Whether this pending step is still right depends on a decision or information that is not available yet. The pipeline should pause for a human."
+      }
+    },
+    "tw9n8": {
+      "type": "choice",
+      "instructions": "Evaluate only `cases.tw9n8`. An automated software-delivery pipeline is about to run this case's pending_step for its ticket. Given the ticket and the ticket_update, is the pending_step still right to run exactly as written? Treat each case independently. Judge fit with the current requirements only, not permissions or code quality.",
+      "criteria": {
+        "continue": "The pending step is still consistent with the ticket as updated. The pipeline should run it.",
+        "replan": "The update makes this pending step wrong as written, whatever any still-missing details turn out to be. The ticket should go back to planning.",
+        "clarify": "Whether this pending step is still right depends on a decision or information that is not available yet. The pipeline should pause for a human."
+      }
+    },
+    "tvsg5": {
+      "type": "choice",
+      "instructions": "Evaluate only `cases.tvsg5`. An automated software-delivery pipeline is about to run this case's pending_step for its ticket. Given the ticket and the ticket_update, is the pending_step still right to run exactly as written? Treat each case independently. Judge fit with the current requirements only, not permissions or code quality.",
+      "criteria": {
+        "continue": "The pending step is still consistent with the ticket as updated. The pipeline should run it.",
+        "replan": "The update makes this pending step wrong as written, whatever any still-missing details turn out to be. The ticket should go back to planning.",
+        "clarify": "Whether this pending step is still right depends on a decision or information that is not available yet. The pipeline should pause for a human."
+      }
+    },
+    "ts4hn": {
+      "type": "choice",
+      "instructions": "Evaluate only `cases.ts4hn`. An automated software-delivery pipeline is about to run this case's pending_step for its ticket. Given the ticket and the ticket_update, is the pending_step still right to run exactly as written? Treat each case independently. Judge fit with the current requirements only, not permissions or code quality.",
+      "criteria": {
+        "continue": "The pending step is still consistent with the ticket as updated. The pipeline should run it.",
+        "replan": "The update makes this pending step wrong as written, whatever any still-missing details turn out to be. The ticket should go back to planning.",
+        "clarify": "Whether this pending step is still right depends on a decision or information that is not available yet. The pipeline should pause for a human."
+      }
+    },
+    "tb9x2": {
+      "type": "choice",
+      "instructions": "Evaluate only `cases.tb9x2`. An automated software-delivery pipeline is about to run this case's pending_step for its ticket. Given the ticket and the ticket_update, is the pending_step still right to run exactly as written? Treat each case independently. Judge fit with the current requirements only, not permissions or code quality.",
+      "criteria": {
+        "continue": "The pending step is still consistent with the ticket as updated. The pipeline should run it.",
+        "replan": "The update makes this pending step wrong as written, whatever any still-missing details turn out to be. The ticket should go back to planning.",
+        "clarify": "Whether this pending step is still right depends on a decision or information that is not available yet. The pipeline should pause for a human."
+      }
+    },
+    "tt7kp": {
+      "type": "choice",
+      "instructions": "Evaluate only `cases.tt7kp`. An automated software-delivery pipeline is about to run this case's pending_step for its ticket. Given the ticket and the ticket_update, is the pending_step still right to run exactly as written? Treat each case independently. Judge fit with the current requirements only, not permissions or code quality.",
+      "criteria": {
+        "continue": "The pending step is still consistent with the ticket as updated. The pipeline should run it.",
+        "replan": "The update makes this pending step wrong as written, whatever any still-missing details turn out to be. The ticket should go back to planning.",
+        "clarify": "Whether this pending step is still right depends on a decision or information that is not available yet. The pipeline should pause for a human."
+      }
+    },
+    "tvad4": {
+      "type": "choice",
+      "instructions": "Evaluate only `cases.tvad4`. An automated software-delivery pipeline is about to run this case's pending_step for its ticket. Given the ticket and the ticket_update, is the pending_step still right to run exactly as written? Treat each case independently. Judge fit with the current requirements only, not permissions or code quality.",
+      "criteria": {
+        "continue": "The pending step is still consistent with the ticket as updated. The pipeline should run it.",
+        "replan": "The update makes this pending step wrong as written, whatever any still-missing details turn out to be. The ticket should go back to planning.",
+        "clarify": "Whether this pending step is still right depends on a decision or information that is not available yet. The pipeline should pause for a human."
+      }
+    },
+    "twzhs": {
+      "type": "choice",
+      "instructions": "Evaluate only `cases.twzhs`. An automated software-delivery pipeline is about to run this case's pending_step for its ticket. Given the ticket and the ticket_update, is the pending_step still right to run exactly as written? Treat each case independently. Judge fit with the current requirements only, not permissions or code quality.",
+      "criteria": {
+        "continue": "The pending step is still consistent with the ticket as updated. The pipeline should run it.",
+        "replan": "The update makes this pending step wrong as written, whatever any still-missing details turn out to be. The ticket should go back to planning.",
+        "clarify": "Whether this pending step is still right depends on a decision or information that is not available yet. The pipeline should pause for a human."
+      }
+    },
+    "tm3z2": {
+      "type": "choice",
+      "instructions": "Evaluate only `cases.tm3z2`. An automated software-delivery pipeline is about to run this case's pending_step for its ticket. Given the ticket and the ticket_update, is the pending_step still right to run exactly as written? Treat each case independently. Judge fit with the current requirements only, not permissions or code quality.",
+      "criteria": {
+        "continue": "The pending step is still consistent with the ticket as updated. The pipeline should run it.",
+        "replan": "The update makes this pending step wrong as written, whatever any still-missing details turn out to be. The ticket should go back to planning.",
+        "clarify": "Whether this pending step is still right depends on a decision or information that is not available yet. The pipeline should pause for a human."
+      }
+    },
+    "tzpnt": {
+      "type": "choice",
+      "instructions": "Evaluate only `cases.tzpnt`. An automated software-delivery pipeline is about to run this case's pending_step for its ticket. Given the ticket and the ticket_update, is the pending_step still right to run exactly as written? Treat each case independently. Judge fit with the current requirements only, not permissions or code quality.",
+      "criteria": {
+        "continue": "The pending step is still consistent with the ticket as updated. The pipeline should run it.",
+        "replan": "The update makes this pending step wrong as written, whatever any still-missing details turn out to be. The ticket should go back to planning.",
+        "clarify": "Whether this pending step is still right depends on a decision or information that is not available yet. The pipeline should pause for a human."
+      }
+    },
+    "taeka": {
+      "type": "choice",
+      "instructions": "Evaluate only `cases.taeka`. An automated software-delivery pipeline is about to run this case's pending_step for its ticket. Given the ticket and the ticket_update, is the pending_step still right to run exactly as written? Treat each case independently. Judge fit with the current requirements only, not permissions or code quality.",
+      "criteria": {
+        "continue": "The pending step is still consistent with the ticket as updated. The pipeline should run it.",
+        "replan": "The update makes this pending step wrong as written, whatever any still-missing details turn out to be. The ticket should go back to planning.",
+        "clarify": "Whether this pending step is still right depends on a decision or information that is not available yet. The pipeline should pause for a human."
+      }
+    },
+    "tdykw": {
+      "type": "choice",
+      "instructions": "Evaluate only `cases.tdykw`. An automated software-delivery pipeline is about to run this case's pending_step for its ticket. Given the ticket and the ticket_update, is the pending_step still right to run exactly as written? Treat each case independently. Judge fit with the current requirements only, not permissions or code quality.",
+      "criteria": {
+        "continue": "The pending step is still consistent with the ticket as updated. The pipeline should run it.",
+        "replan": "The update makes this pending step wrong as written, whatever any still-missing details turn out to be. The ticket should go back to planning.",
+        "clarify": "Whether this pending step is still right depends on a decision or information that is not available yet. The pipeline should pause for a human."
+      }
+    },
+    "tg8xz": {
+      "type": "choice",
+      "instructions": "Evaluate only `cases.tg8xz`. An automated software-delivery pipeline is about to run this case's pending_step for its ticket. Given the ticket and the ticket_update, is the pending_step still right to run exactly as written? Treat each case independently. Judge fit with the current requirements only, not permissions or code quality.",
+      "criteria": {
+        "continue": "The pending step is still consistent with the ticket as updated. The pipeline should run it.",
+        "replan": "The update makes this pending step wrong as written, whatever any still-missing details turn out to be. The ticket should go back to planning.",
+        "clarify": "Whether this pending step is still right depends on a decision or information that is not available yet. The pipeline should pause for a human."
+      }
+    },
+    "tdt2e": {
+      "type": "choice",
+      "instructions": "Evaluate only `cases.tdt2e`. An automated software-delivery pipeline is about to run this case's pending_step for its ticket. Given the ticket and the ticket_update, is the pending_step still right to run exactly as written? Treat each case independently. Judge fit with the current requirements only, not permissions or code quality.",
+      "criteria": {
+        "continue": "The pending step is still consistent with the ticket as updated. The pipeline should run it.",
+        "replan": "The update makes this pending step wrong as written, whatever any still-missing details turn out to be. The ticket should go back to planning.",
+        "clarify": "Whether this pending step is still right depends on a decision or information that is not available yet. The pipeline should pause for a human."
+      }
+    },
+    "tbwux": {
+      "type": "choice",
+      "instructions": "Evaluate only `cases.tbwux`. An automated software-delivery pipeline is about to run this case's pending_step for its ticket. Given the ticket and the ticket_update, is the pending_step still right to run exactly as written? Treat each case independently. Judge fit with the current requirements only, not permissions or code quality.",
+      "criteria": {
+        "continue": "The pending step is still consistent with the ticket as updated. The pipeline should run it.",
+        "replan": "The update makes this pending step wrong as written, whatever any still-missing details turn out to be. The ticket should go back to planning.",
+        "clarify": "Whether this pending step is still right depends on a decision or information that is not available yet. The pipeline should pause for a human."
+      }
+    },
+    "takyn": {
+      "type": "choice",
+      "instructions": "Evaluate only `cases.takyn`. An automated software-delivery pipeline is about to run this case's pending_step for its ticket. Given the ticket and the ticket_update, is the pending_step still right to run exactly as written? Treat each case independently. Judge fit with the current requirements only, not permissions or code quality.",
+      "criteria": {
+        "continue": "The pending step is still consistent with the ticket as updated. The pipeline should run it.",
+        "replan": "The update makes this pending step wrong as written, whatever any still-missing details turn out to be. The ticket should go back to planning.",
+        "clarify": "Whether this pending step is still right depends on a decision or information that is not available yet. The pipeline should pause for a human."
+      }
+    },
+    "t4cyb": {
+      "type": "choice",
+      "instructions": "Evaluate only `cases.t4cyb`. An automated software-delivery pipeline is about to run this case's pending_step for its ticket. Given the ticket and the ticket_update, is the pending_step still right to run exactly as written? Treat each case independently. Judge fit with the current requirements only, not permissions or code quality.",
+      "criteria": {
+        "continue": "The pending step is still consistent with the ticket as updated. The pipeline should run it.",
+        "replan": "The update makes this pending step wrong as written, whatever any still-missing details turn out to be. The ticket should go back to planning.",
+        "clarify": "Whether this pending step is still right depends on a decision or information that is not available yet. The pipeline should pause for a human."
+      }
+    },
+    "ttcgv": {
+      "type": "choice",
+      "instructions": "Evaluate only `cases.ttcgv`. An automated software-delivery pipeline is about to run this case's pending_step for its ticket. Given the ticket and the ticket_update, is the pending_step still right to run exactly as written? Treat each case independently. Judge fit with the current requirements only, not permissions or code quality.",
+      "criteria": {
+        "continue": "The pending step is still consistent with the ticket as updated. The pipeline should run it.",
+        "replan": "The update makes this pending step wrong as written, whatever any still-missing details turn out to be. The ticket should go back to planning.",
+        "clarify": "Whether this pending step is still right depends on a decision or information that is not available yet. The pipeline should pause for a human."
+      }
+    },
+    "tyjug": {
+      "type": "choice",
+      "instructions": "Evaluate only `cases.tyjug`. An automated software-delivery pipeline is about to run this case's pending_step for its ticket. Given the ticket and the ticket_update, is the pending_step still right to run exactly as written? Treat each case independently. Judge fit with the current requirements only, not permissions or code quality.",
+      "criteria": {
+        "continue": "The pending step is still consistent with the ticket as updated. The pipeline should run it.",
+        "replan": "The update makes this pending step wrong as written, whatever any still-missing details turn out to be. The ticket should go back to planning.",
+        "clarify": "Whether this pending step is still right depends on a decision or information that is not available yet. The pipeline should pause for a human."
+      }
+    },
+    "tdc39": {
+      "type": "choice",
+      "instructions": "Evaluate only `cases.tdc39`. An automated software-delivery pipeline is about to run this case's pending_step for its ticket. Given the ticket and the ticket_update, is the pending_step still right to run exactly as written? Treat each case independently. Judge fit with the current requirements only, not permissions or code quality.",
+      "criteria": {
+        "continue": "The pending step is still consistent with the ticket as updated. The pipeline should run it.",
+        "replan": "The update makes this pending step wrong as written, whatever any still-missing details turn out to be. The ticket should go back to planning.",
+        "clarify": "Whether this pending step is still right depends on a decision or information that is not available yet. The pipeline should pause for a human."
+      }
+    },
+    "t87tv": {
+      "type": "choice",
+      "instructions": "Evaluate only `cases.t87tv`. An automated software-delivery pipeline is about to run this case's pending_step for its ticket. Given the ticket and the ticket_update, is the pending_step still right to run exactly as written? Treat each case independently. Judge fit with the current requirements only, not permissions or code quality.",
+      "criteria": {
+        "continue": "The pending step is still consistent with the ticket as updated. The pipeline should run it.",
+        "replan": "The update makes this pending step wrong as written, whatever any still-missing details turn out to be. The ticket should go back to planning.",
+        "clarify": "Whether this pending step is still right depends on a decision or information that is not available yet. The pipeline should pause for a human."
+      }
+    },
+    "tbtk9": {
+      "type": "choice",
+      "instructions": "Evaluate only `cases.tbtk9`. An automated software-delivery pipeline is about to run this case's pending_step for its ticket. Given the ticket and the ticket_update, is the pending_step still right to run exactly as written? Treat each case independently. Judge fit with the current requirements only, not permissions or code quality.",
+      "criteria": {
+        "continue": "The pending step is still consistent with the ticket as updated. The pipeline should run it.",
+        "replan": "The update makes this pending step wrong as written, whatever any still-missing details turn out to be. The ticket should go back to planning.",
+        "clarify": "Whether this pending step is still right depends on a decision or information that is not available yet. The pipeline should pause for a human."
+      }
+    },
+    "tan3s": {
+      "type": "choice",
+      "instructions": "Evaluate only `cases.tan3s`. An automated software-delivery pipeline is about to run this case's pending_step for its ticket. Given the ticket and the ticket_update, is the pending_step still right to run exactly as written? Treat each case independently. Judge fit with the current requirements only, not permissions or code quality.",
+      "criteria": {
+        "continue": "The pending step is still consistent with the ticket as updated. The pipeline should run it.",
+        "replan": "The update makes this pending step wrong as written, whatever any still-missing details turn out to be. The ticket should go back to planning.",
+        "clarify": "Whether this pending step is still right depends on a decision or information that is not available yet. The pipeline should pause for a human."
+      }
+    },
+    "tpdr2": {
+      "type": "choice",
+      "instructions": "Evaluate only `cases.tpdr2`. An automated software-delivery pipeline is about to run this case's pending_step for its ticket. Given the ticket and the ticket_update, is the pending_step still right to run exactly as written? Treat each case independently. Judge fit with the current requirements only, not permissions or code quality.",
+      "criteria": {
+        "continue": "The pending step is still consistent with the ticket as updated. The pipeline should run it.",
+        "replan": "The update makes this pending step wrong as written, whatever any still-missing details turn out to be. The ticket should go back to planning.",
+        "clarify": "Whether this pending step is still right depends on a decision or information that is not available yet. The pipeline should pause for a human."
+      }
+    },
+    "tqq77": {
+      "type": "choice",
+      "instructions": "Evaluate only `cases.tqq77`. An automated software-delivery pipeline is about to run this case's pending_step for its ticket. Given the ticket and the ticket_update, is the pending_step still right to run exactly as written? Treat each case independently. Judge fit with the current requirements only, not permissions or code quality.",
+      "criteria": {
+        "continue": "The pending step is still consistent with the ticket as updated. The pipeline should run it.",
+        "replan": "The update makes this pending step wrong as written, whatever any still-missing details turn out to be. The ticket should go back to planning.",
+        "clarify": "Whether this pending step is still right depends on a decision or information that is not available yet. The pipeline should pause for a human."
+      }
+    },
+    "tpnxs": {
+      "type": "choice",
+      "instructions": "Evaluate only `cases.tpnxs`. An automated software-delivery pipeline is about to run this case's pending_step for its ticket. Given the ticket and the ticket_update, is the pending_step still right to run exactly as written? Treat each case independently. Judge fit with the current requirements only, not permissions or code quality.",
+      "criteria": {
+        "continue": "The pending step is still consistent with the ticket as updated. The pipeline should run it.",
+        "replan": "The update makes this pending step wrong as written, whatever any still-missing details turn out to be. The ticket should go back to planning.",
+        "clarify": "Whether this pending step is still right depends on a decision or information that is not available yet. The pipeline should pause for a human."
+      }
+    },
+    "tf2rb": {
+      "type": "choice",
+      "instructions": "Evaluate only `cases.tf2rb`. An automated software-delivery pipeline is about to run this case's pending_step for its ticket. Given the ticket and the ticket_update, is the pending_step still right to run exactly as written? Treat each case independently. Judge fit with the current requirements only, not permissions or code quality.",
+      "criteria": {
+        "continue": "The pending step is still consistent with the ticket as updated. The pipeline should run it.",
+        "replan": "The update makes this pending step wrong as written, whatever any still-missing details turn out to be. The ticket should go back to planning.",
+        "clarify": "Whether this pending step is still right depends on a decision or information that is not available yet. The pipeline should pause for a human."
+      }
+    },
+    "tpmh8": {
+      "type": "choice",
+      "instructions": "Evaluate only `cases.tpmh8`. An automated software-delivery pipeline is about to run this case's pending_step for its ticket. Given the ticket and the ticket_update, is the pending_step still right to run exactly as written? Treat each case independently. Judge fit with the current requirements only, not permissions or code quality.",
+      "criteria": {
+        "continue": "The pending step is still consistent with the ticket as updated. The pipeline should run it.",
+        "replan": "The update makes this pending step wrong as written, whatever any still-missing details turn out to be. The ticket should go back to planning.",
+        "clarify": "Whether this pending step is still right depends on a decision or information that is not available yet. The pipeline should pause for a human."
+      }
+    },
+    "tjm8d": {
+      "type": "choice",
+      "instructions": "Evaluate only `cases.tjm8d`. An automated software-delivery pipeline is about to run this case's pending_step for its ticket. Given the ticket and the ticket_update, is the pending_step still right to run exactly as written? Treat each case independently. Judge fit with the current requirements only, not permissions or code quality.",
+      "criteria": {
+        "continue": "The pending step is still consistent with the ticket as updated. The pipeline should run it.",
+        "replan": "The update makes this pending step wrong as written, whatever any still-missing details turn out to be. The ticket should go back to planning.",
+        "clarify": "Whether this pending step is still right depends on a decision or information that is not available yet. The pipeline should pause for a human."
+      }
+    },
+    "txre8": {
+      "type": "choice",
+      "instructions": "Evaluate only `cases.txre8`. An automated software-delivery pipeline is about to run this case's pending_step for its ticket. Given the ticket and the ticket_update, is the pending_step still right to run exactly as written? Treat each case independently. Judge fit with the current requirements only, not permissions or code quality.",
+      "criteria": {
+        "continue": "The pending step is still consistent with the ticket as updated. The pipeline should run it.",
+        "replan": "The update makes this pending step wrong as written, whatever any still-missing details turn out to be. The ticket should go back to planning.",
+        "clarify": "Whether this pending step is still right depends on a decision or information that is not available yet. The pipeline should pause for a human."
+      }
+    },
+    "t7cfs": {
+      "type": "choice",
+      "instructions": "Evaluate only `cases.t7cfs`. An automated software-delivery pipeline is about to run this case's pending_step for its ticket. Given the ticket and the ticket_update, is the pending_step still right to run exactly as written? Treat each case independently. Judge fit with the current requirements only, not permissions or code quality.",
+      "criteria": {
+        "continue": "The pending step is still consistent with the ticket as updated. The pipeline should run it.",
+        "replan": "The update makes this pending step wrong as written, whatever any still-missing details turn out to be. The ticket should go back to planning.",
+        "clarify": "Whether this pending step is still right depends on a decision or information that is not available yet. The pipeline should pause for a human."
+      }
+    },
+    "t2vwc": {
+      "type": "choice",
+      "instructions": "Evaluate only `cases.t2vwc`. An automated software-delivery pipeline is about to run this case's pending_step for its ticket. Given the ticket and the ticket_update, is the pending_step still right to run exactly as written? Treat each case independently. Judge fit with the current requirements only, not permissions or code quality.",
+      "criteria": {
+        "continue": "The pending step is still consistent with the ticket as updated. The pipeline should run it.",
+        "replan": "The update makes this pending step wrong as written, whatever any still-missing details turn out to be. The ticket should go back to planning.",
+        "clarify": "Whether this pending step is still right depends on a decision or information that is not available yet. The pipeline should pause for a human."
+      }
+    },
+    "tj75q": {
+      "type": "choice",
+      "instructions": "Evaluate only `cases.tj75q`. An automated software-delivery pipeline is about to run this case's pending_step for its ticket. Given the ticket and the ticket_update, is the pending_step still right to run exactly as written? Treat each case independently. Judge fit with the current requirements only, not permissions or code quality.",
+      "criteria": {
+        "continue": "The pending step is still consistent with the ticket as updated. The pipeline should run it.",
+        "replan": "The update makes this pending step wrong as written, whatever any still-missing details turn out to be. The ticket should go back to planning.",
+        "clarify": "Whether this pending step is still right depends on a decision or information that is not available yet. The pipeline should pause for a human."
+      }
+    },
+    "tvkkq": {
+      "type": "choice",
+      "instructions": "Evaluate only `cases.tvkkq`. An automated software-delivery pipeline is about to run this case's pending_step for its ticket. Given the ticket and the ticket_update, is the pending_step still right to run exactly as written? Treat each case independently. Judge fit with the current requirements only, not permissions or code quality.",
+      "criteria": {
+        "continue": "The pending step is still consistent with the ticket as updated. The pipeline should run it.",
+        "replan": "The update makes this pending step wrong as written, whatever any still-missing details turn out to be. The ticket should go back to planning.",
+        "clarify": "Whether this pending step is still right depends on a decision or information that is not available yet. The pipeline should pause for a human."
+      }
+    },
+    "tmfaa": {
+      "type": "choice",
+      "instructions": "Evaluate only `cases.tmfaa`. An automated software-delivery pipeline is about to run this case's pending_step for its ticket. Given the ticket and the ticket_update, is the pending_step still right to run exactly as written? Treat each case independently. Judge fit with the current requirements only, not permissions or code quality.",
+      "criteria": {
+        "continue": "The pending step is still consistent with the ticket as updated. The pipeline should run it.",
+        "replan": "The update makes this pending step wrong as written, whatever any still-missing details turn out to be. The ticket should go back to planning.",
+        "clarify": "Whether this pending step is still right depends on a decision or information that is not available yet. The pipeline should pause for a human."
+      }
+    },
+    "tv6ae": {
+      "type": "choice",
+      "instructions": "Evaluate only `cases.tv6ae`. An automated software-delivery pipeline is about to run this case's pending_step for its ticket. Given the ticket and the ticket_update, is the pending_step still right to run exactly as written? Treat each case independently. Judge fit with the current requirements only, not permissions or code quality.",
+      "criteria": {
+        "continue": "The pending step is still consistent with the ticket as updated. The pipeline should run it.",
+        "replan": "The update makes this pending step wrong as written, whatever any still-missing details turn out to be. The ticket should go back to planning.",
+        "clarify": "Whether this pending step is still right depends on a decision or information that is not available yet. The pipeline should pause for a human."
+      }
+    },
+    "tx8wv": {
+      "type": "choice",
+      "instructions": "Evaluate only `cases.tx8wv`. An automated software-delivery pipeline is about to run this case's pending_step for its ticket. Given the ticket and the ticket_update, is the pending_step still right to run exactly as written? Treat each case independently. Judge fit with the current requirements only, not permissions or code quality.",
+      "criteria": {
+        "continue": "The pending step is still consistent with the ticket as updated. The pipeline should run it.",
+        "replan": "The update makes this pending step wrong as written, whatever any still-missing details turn out to be. The ticket should go back to planning.",
+        "clarify": "Whether this pending step is still right depends on a decision or information that is not available yet. The pipeline should pause for a human."
+      }
+    },
+    "tgdvm": {
+      "type": "choice",
+      "instructions": "Evaluate only `cases.tgdvm`. An automated software-delivery pipeline is about to run this case's pending_step for its ticket. Given the ticket and the ticket_update, is the pending_step still right to run exactly as written? Treat each case independently. Judge fit with the current requirements only, not permissions or code quality.",
+      "criteria": {
+        "continue": "The pending step is still consistent with the ticket as updated. The pipeline should run it.",
+        "replan": "The update makes this pending step wrong as written, whatever any still-missing details turn out to be. The ticket should go back to planning.",
+        "clarify": "Whether this pending step is still right depends on a decision or information that is not available yet. The pipeline should pause for a human."
+      }
+    },
+    "tpq5z": {
+      "type": "choice",
+      "instructions": "Evaluate only `cases.tpq5z`. An automated software-delivery pipeline is about to run this case's pending_step for its ticket. Given the ticket and the ticket_update, is the pending_step still right to run exactly as written? Treat each case independently. Judge fit with the current requirements only, not permissions or code quality.",
+      "criteria": {
+        "continue": "The pending step is still consistent with the ticket as updated. The pipeline should run it.",
+        "replan": "The update makes this pending step wrong as written, whatever any still-missing details turn out to be. The ticket should go back to planning.",
+        "clarify": "Whether this pending step is still right depends on a decision or information that is not available yet. The pipeline should pause for a human."
+      }
+    },
+    "tjqbf": {
+      "type": "choice",
+      "instructions": "Evaluate only `cases.tjqbf`. An automated software-delivery pipeline is about to run this case's pending_step for its ticket. Given the ticket and the ticket_update, is the pending_step still right to run exactly as written? Treat each case independently. Judge fit with the current requirements only, not permissions or code quality.",
+      "criteria": {
+        "continue": "The pending step is still consistent with the ticket as updated. The pipeline should run it.",
+        "replan": "The update makes this pending step wrong as written, whatever any still-missing details turn out to be. The ticket should go back to planning.",
+        "clarify": "Whether this pending step is still right depends on a decision or information that is not available yet. The pipeline should pause for a human."
+      }
+    },
+    "tghng": {
+      "type": "choice",
+      "instructions": "Evaluate only `cases.tghng`. An automated software-delivery pipeline is about to run this case's pending_step for its ticket. Given the ticket and the ticket_update, is the pending_step still right to run exactly as written? Treat each case independently. Judge fit with the current requirements only, not permissions or code quality.",
+      "criteria": {
+        "continue": "The pending step is still consistent with the ticket as updated. The pipeline should run it.",
+        "replan": "The update makes this pending step wrong as written, whatever any still-missing details turn out to be. The ticket should go back to planning.",
+        "clarify": "Whether this pending step is still right depends on a decision or information that is not available yet. The pipeline should pause for a human."
+      }
+    }
+  }
+}

@@ -1,0 +1,5 @@
+.env
+responses-mock/
+__pycache__/
+*.pyc
+.venv/

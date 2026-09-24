@@ -1,0 +1,338 @@
+{
+  "t5fr4": {
+    "sid": "rollout",
+    "kind": "base_clarify",
+    "step": "A",
+    "update_key": "u_q",
+    "label": "clarify"
+  },
+  "ttvqt": {
+    "sid": "api",
+    "kind": "base_replan",
+    "step": "A",
+    "update_key": "u_r",
+    "label": "replan"
+  },
+  "th6d2": {
+    "sid": "retention",
+    "kind": "base_continue",
+    "step": "A",
+    "update_key": "u_c",
+    "label": "continue"
+  },
+  "tash4": {
+    "sid": "webhook",
+    "kind": "cf_continue_update_replan",
+    "step": "D",
+    "update_key": "u_c",
+    "label": "replan"
+  },
+  "tv9kq": {
+    "sid": "retention",
+    "kind": "cf_replan_update_continue",
+    "step": "B",
+    "update_key": "u_r",
+    "label": "continue"
+  },
+  "tdere": {
+    "sid": "export",
+    "kind": "base_clarify",
+    "step": "A",
+    "update_key": "u_q",
+    "label": "clarify"
+  },
+  "taakq": {
+    "sid": "export",
+    "kind": "base_replan",
+    "step": "A",
+    "update_key": "u_r",
+    "label": "replan"
+  },
+  "tgpux": {
+    "sid": "rollout",
+    "kind": "base_replan",
+    "step": "A",
+    "update_key": "u_r",
+    "label": "replan"
+  },
+  "tw9n8": {
+    "sid": "export",
+    "kind": "cf_continue_update_replan",
+    "step": "D",
+    "update_key": "u_c",
+    "label": "replan"
+  },
+  "tvsg5": {
+    "sid": "webhook",
+    "kind": "cf_clarify_update_continue",
+    "step": "C",
+    "update_key": "u_q",
+    "label": "continue"
+  },
+  "ts4hn": {
+    "sid": "region",
+    "kind": "base_continue",
+    "step": "A",
+    "update_key": "u_c",
+    "label": "continue"
+  },
+  "tb9x2": {
+    "sid": "dependency",
+    "kind": "cf_replan_update_continue",
+    "step": "B",
+    "update_key": "u_r",
+    "label": "continue"
+  },
+  "tt7kp": {
+    "sid": "dependency",
+    "kind": "base_clarify",
+    "step": "A",
+    "update_key": "u_q",
+    "label": "clarify"
+  },
+  "tvad4": {
+    "sid": "region",
+    "kind": "cf_clarify_update_continue",
+    "step": "C",
+    "update_key": "u_q",
+    "label": "continue"
+  },
+  "twzhs": {
+    "sid": "region",
+    "kind": "base_replan",
+    "step": "A",
+    "update_key": "u_r",
+    "label": "replan"
+  },
+  "tm3z2": {
+    "sid": "export",
+    "kind": "cf_clarify_update_continue",
+    "step": "C",
+    "update_key": "u_q",
+    "label": "continue"
+  },
+  "tzpnt": {
+    "sid": "schema",
+    "kind": "base_replan",
+    "step": "A",
+    "update_key": "u_r",
+    "label": "replan"
+  },
+  "taeka": {
+    "sid": "region",
+    "kind": "base_clarify",
+    "step": "A",
+    "update_key": "u_q",
+    "label": "clarify"
+  },
+  "tdykw": {
+    "sid": "api",
+    "kind": "base_clarify",
+    "step": "A",
+    "update_key": "u_q",
+    "label": "clarify"
+  },
+  "tg8xz": {
+    "sid": "api",
+    "kind": "base_continue",
+    "step": "A",
+    "update_key": "u_c",
+    "label": "continue"
+  },
+  "tdt2e": {
+    "sid": "schema",
+    "kind": "cf_clarify_update_continue",
+    "step": "C",
+    "update_key": "u_q",
+    "label": "continue"
+  },
+  "tbwux": {
+    "sid": "retention",
+    "kind": "base_replan",
+    "step": "A",
+    "update_key": "u_r",
+    "label": "replan"
+  },
+  "takyn": {
+    "sid": "schema",
+    "kind": "cf_continue_update_replan",
+    "step": "D",
+    "update_key": "u_c",
+    "label": "replan"
+  },
+  "t4cyb": {
+    "sid": "rollout",
+    "kind": "base_continue",
+    "step": "A",
+    "update_key": "u_c",
+    "label": "continue"
+  },
+  "ttcgv": {
+    "sid": "webhook",
+    "kind": "base_clarify",
+    "step": "A",
+    "update_key": "u_q",
+    "label": "clarify"
+  },
+  "tyjug": {
+    "sid": "api",
+    "kind": "cf_continue_update_replan",
+    "step": "D",
+    "update_key": "u_c",
+    "label": "replan"
+  },
+  "tdc39": {
+    "sid": "retention",
+    "kind": "base_clarify",
+    "step": "A",
+    "update_key": "u_q",
+    "label": "clarify"
+  },
+  "t87tv": {
+    "sid": "schema",
+    "kind": "base_continue",
+    "step": "A",
+    "update_key": "u_c",
+    "label": "continue"
+  },
+  "tbtk9": {
+    "sid": "schema",
+    "kind": "base_clarify",
+    "step": "A",
+    "update_key": "u_q",
+    "label": "clarify"
+  },
+  "tan3s": {
+    "sid": "webhook",
+    "kind": "base_replan",
+    "step": "A",
+    "update_key": "u_r",
+    "label": "replan"
+  },
+  "tpdr2": {
+    "sid": "dependency",
+    "kind": "base_replan",
+    "step": "A",
+    "update_key": "u_r",
+    "label": "replan"
+  },
+  "tqq77": {
+    "sid": "region",
+    "kind": "cf_replan_update_continue",
+    "step": "B",
+    "update_key": "u_r",
+    "label": "continue"
+  },
+  "tpnxs": {
+    "sid": "dependency",
+    "kind": "cf_continue_update_replan",
+    "step": "D",
+    "update_key": "u_c",
+    "label": "replan"
+  },
+  "tf2rb": {
+    "sid": "rollout",
+    "kind": "cf_clarify_update_continue",
+    "step": "C",
+    "update_key": "u_q",
+    "label": "continue"
+  },
+  "tpmh8": {
+    "sid": "rollout",
+    "kind": "cf_replan_update_continue",
+    "step": "B",
+    "update_key": "u_r",
+    "label": "continue"
+  },
+  "tjm8d": {
+    "sid": "export",
+    "kind": "cf_replan_update_continue",
+    "step": "B",
+    "update_key": "u_r",
+    "label": "continue"
+  },
+  "txre8": {
+    "sid": "api",
+    "kind": "cf_clarify_update_continue",
+    "step": "C",
+    "update_key": "u_q",
+    "label": "continue"
+  },
+  "t7cfs": {
+    "sid": "rollout",
+    "kind": "cf_continue_update_replan",
+    "step": "D",
+    "update_key": "u_c",
+    "label": "replan"
+  },
+  "t2vwc": {
+    "sid": "region",
+    "kind": "cf_continue_update_replan",
+    "step": "D",
+    "update_key": "u_c",
+    "label": "replan"
+  },
+  "tj75q": {
+    "sid": "api",
+    "kind": "cf_replan_update_continue",
+    "step": "B",
+    "update_key": "u_r",
+    "label": "continue"
+  },
+  "tvkkq": {
+    "sid": "webhook",
+    "kind": "cf_replan_update_continue",
+    "step": "B",
+    "update_key": "u_r",
+    "label": "continue"
+  },
+  "tmfaa": {
+    "sid": "dependency",
+    "kind": "base_continue",
+    "step": "A",
+    "update_key": "u_c",
+    "label": "continue"
+  },
+  "tv6ae": {
+    "sid": "retention",
+    "kind": "cf_continue_update_replan",
+    "step": "D",
+    "update_key": "u_c",
+    "label": "replan"
+  },
+  "tx8wv": {
+    "sid": "schema",
+    "kind": "cf_replan_update_continue",
+    "step": "B",
+    "update_key": "u_r",
+    "label": "continue"
+  },
+  "tgdvm": {
+    "sid": "dependency",
+    "kind": "cf_clarify_update_continue",
+    "step": "C",
+    "update_key": "u_q",
+    "label": "continue"
+  },
+  "tpq5z": {
+    "sid": "retention",
+    "kind": "cf_clarify_update_continue",
+    "step": "C",
+    "update_key": "u_q",
+    "label": "continue"
+  },
+  "tjqbf": {
+    "sid": "export",
+    "kind": "base_continue",
+    "step": "A",
+    "update_key": "u_c",
+    "label": "continue"
+  },
+  "tghng": {
+    "sid": "webhook",
+    "kind": "base_continue",
+    "step": "A",
+    "update_key": "u_c",
+    "label": "continue"
+  }
+}

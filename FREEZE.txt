@@ -1,0 +1,6 @@
+SHA-256 of the frozen test set. Commit these files to a public repo or gist
+BEFORE the first run so the timestamp shows the labels came first.
+
+d0d1edab541f320a0f41f1a286d0c06ca95214380e38dac673975a8e33df418b  answer_key.json
+7ff7c3d7d00cf2043d205f90e14e2310b0b702d03d14f1be40cc7649181729fb  jev_request.json
+3bfc5f49c26c407531fa613d83fadaad814800e49bb936ee81a4a39562fb3504  judge_cases.json
